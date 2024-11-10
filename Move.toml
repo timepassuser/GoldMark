@@ -1,0 +1,17 @@
+[package]
+name = "LuxuryGoodsOwnership"
+version = "1.0.0"
+authors = []
+
+[addresses]
+metaschool = "0x733200cd7388745c9aa17e72a050a8c9758e524c223899cec5cc765904af2240"
+std = "0x1"
+
+[dev-addresses]
+
+[dependencies.AptosFramework]
+git = "https://github.com/aptos-labs/aptos-core.git"
+rev = "mainnet"
+subdir = "aptos-move/framework/aptos-framework"
+
+[dev-dependencies]

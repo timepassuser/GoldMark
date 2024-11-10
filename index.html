@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GoldMark - Luxury Product Registration</title>
+    <link rel="stylesheet" href="styles.css">
+    <script defer src="walletIntegration.js"></script>
+    <style>
+        /* Basic reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f3f4f6;
+            color: #333;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+        }
+
+        header {
+            background-color: #ffd700;
+            color: #333;
+            padding: 1rem;
+            width: 100%;
+            text-align: center;
+            font-size: 1.5rem;
+            font-weight: bold;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .container {
+            background-color: #fff;
+            padding: 2rem;
+            border-radius: 10px;
+            width: 90%;
+            max-width: 500px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            margin-top: 2rem;
+            text-align: center;
+        }
+
+        h2,
+        h3 {
+            margin: 1rem 0;
+            color: #333;
+        }
+
+        .input-group {
+            margin: 1rem 0;
+            display: flex;
+            flex-direction: column;
+            gap: 0.5rem;
+        }
+
+        input[type="text"] {
+            padding: 0.8rem;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            font-size: 1rem;
+            width: 100%;
+        }
+
+        button {
+            padding: 0.8rem;
+            font-size: 1rem;
+            background-color: #ffd700;
+            color: #333;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-top: 1rem;
+            transition: background-color 0.3s;
+        }
+
+        button:hover {
+            background-color: #e0c200;
+        }
+
+        footer {
+            margin-top: 2rem;
+            font-size: 0.9rem;
+            color: #888;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <header>GoldMark - Product Authentication</header>
+
+    <div class="container">
+        <h2 id="errorElement"></h2>
+        <button id="connectButton">Connect Wallet</button>
+
+        <h2 id="yourAddress"></h2>
+        <h2 id="yourPubKey"></h2>
+        <h2 style="color: white;" "balanceElement"></h2>
+
+        <div class="input-group">
+            <input type="text" id="productName" placeholder="Enter product name">
+            <input type="text" id="productId" placeholder="Enter product ID">
+        </div>
+
+        <button id="registerButton">Register Product</button>
+
+        <h3>Transfer Product Ownership</h3>
+        <div class="input-group">
+            <input type="text" id="transferProduct" placeholder="Enter product ID to transfer">
+            <input type="text" id="transferRecipient" placeholder="Enter recipient wallet address">
+        </div>
+
+        <button id="transferButton">Transfer Product</button>
+    </div>
+
+    <footer>&copy; 2024 GoldMark. All Rights Reserved.</footer>
+</body>
+
+</html>

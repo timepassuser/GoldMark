@@ -1,0 +1,90 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* General styling */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f3f4f6;
+    color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+/* Container for all elements */
+.container {
+    width: 300px;
+    text-align: center;
+    background: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Error message styling */
+#errorElement {
+    color: #d9534f;
+    margin-bottom: 10px;
+}
+
+/* Buttons styling */
+button {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+#detectButton {
+    background-color: #5bc0de;
+    color: white;
+}
+
+#connectButton {
+    background-color: #5cb85c;
+    color: white;
+}
+
+#registerButton {
+    background-color: #0275d8;
+    color: white;
+}
+
+button:hover {
+    opacity: 0.9;
+}
+
+/* Inputs styling */
+.input-group {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+input[type="text"] {
+    padding: 10px;
+    width: 100%;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+/* Styling for address, public key, and balance display */
+#yourAddress,
+#yourPubKey,
+#balanceElement {
+    color: #555;
+    font-size: 14px;
+    margin-top: 10px;
+    overflow: auto;
+}
